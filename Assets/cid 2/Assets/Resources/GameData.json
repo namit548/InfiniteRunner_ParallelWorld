@@ -1,0 +1,1929 @@
+{
+  "Version": 2,
+  "ObjectiveData": {
+    "Descriptions": {
+      "BreakDoors": "Break {0} doors",
+      "KillGoons": "Punch {0} goons",
+      "CollectClues": "Find {0} clues",
+      "CollectCoins": "Collect {0} coins"
+    },
+    "ShortDescriptions": {
+      "BreakDoors": "Doors",
+      "KillGoons": "Goons",
+      "CollectClues": "Clues",
+      "CollectCoins": "Coins"
+    }
+  },
+  "PowerupData": [
+    {
+      "PowerUpType": "Vacuum",
+      "PowerUpDisplayName": "Coin Magnet",
+      "PowerUpImageName": "icon-coinmagnet",
+      "Enabled": true,
+      "BaseDuration": 3,
+      "Upgrades": [
+        {
+          "Cost": 350,
+          "DurationAdded": 6
+        },
+        {
+          "Cost": 500,
+          "DurationAdded": 9
+        },
+        {
+          "Cost": 1000,
+          "DurationAdded": 12
+        },
+        {
+          "Cost": 2000,
+          "DurationAdded": 15
+        }
+      ]
+    },
+    {
+      "PowerUpType": "Multiplier",
+      "PowerUpDisplayName": "Coin Multiplier",
+      "PowerUpImageName": "icon-multiplier",
+      "Enabled": true,
+      "BaseDuration": 3,
+      "Upgrades": [
+        {
+          "Cost": 350,
+          "DurationAdded": 6
+        },
+        {
+          "Cost": 500,
+          "DurationAdded": 9
+        },
+        {
+          "Cost": 1000,
+          "DurationAdded": 12
+        },
+        {
+          "Cost": 2000,
+          "DurationAdded": 15
+        }
+      ]
+    },
+    {
+      "PowerUpType": "JumpingBoots",
+      "PowerUpDisplayName": "Jumping Boots",
+      "PowerUpImageName": "icon-jumpingboots",
+      "Enabled": false,
+      "BaseDuration": 3,
+      "Upgrades": [
+        {
+          "Cost": 350,
+          "DurationAdded": 6
+        },
+        {
+          "Cost": 500,
+          "DurationAdded": 9
+        },
+        {
+          "Cost": 1000,
+          "DurationAdded": 12
+        },
+        {
+          "Cost": 2000,
+          "DurationAdded": 15
+        }
+      ]
+    },
+    {
+      "PowerUpType": "JetpackStandIn",
+      "PowerUpDisplayName": "Coin Bonus",
+      "PowerUpImageName": "icon-jetpackstandin",
+      "Enabled": false,
+      "BaseDuration": 3,
+      "Upgrades": [
+        {
+          "Cost": 350,
+          "DurationAdded": 6
+        },
+        {
+          "Cost": 500,
+          "DurationAdded": 9
+        },
+        {
+          "Cost": 1000,
+          "DurationAdded": 12
+        },
+        {
+          "Cost": 2000,
+          "DurationAdded": 15
+        }
+      ]
+    }
+  ],
+  "LevelData": [
+    {
+      "Chapter": "Chapter_1",
+      "Level": "Level_1",
+      "NumberOfClues": 2,
+      "NumberOfDoors": 1,
+      "LevelDescription": "Bomb Blast is being coordinated by a Hacker - with a Lion Tattoo on his neck. He has landed at Mumbai airport from Mauritius... Daya Catch him!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_1",
+      "Level": "Level_2",
+      "NumberOfClues": 2,
+      "NumberOfDoors": 2,
+      "LevelDescription": "Good Job! - Hacker refusing to speak. His biometrics reveal background, that he has no family but a girl friend - Find her",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_1",
+      "Level": "Level_3",
+      "NumberOfClues": 2,
+      "NumberOfDoors": 2,
+      "LevelDescription": "Good Job! - His Girlfriend says he attended the National Crisis Conference with his team. Find them, start at the conference its about to finish",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_1",
+      "Level": "Level_4",
+      "NumberOfClues": 2,
+      "NumberOfDoors": 2,
+      "LevelDescription": "Conference organiser says they went missing for a few hours and all came back with tattoos - Daya find the Tattoo parlour",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_1",
+      "Level": "Level_5",
+      "NumberOfClues": 2,
+      "NumberOfDoors": 3,
+      "LevelDescription": "Parlour owner says they all got Lion Tattoos. They were 3 team mates - find them",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_1",
+      "Level": "Level_6",
+      "NumberOfClues": 4,
+      "NumberOfDoors": 3,
+      "LevelDescription": "This tattoo is similar to the one on the hacker’s neck - hacker says ‘lion will roar’. Find the second teammate",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_1",
+      "Level": "Level_7",
+      "NumberOfClues": 4,
+      "NumberOfDoors": 3,
+      "LevelDescription": "The last teammate is our last clue, we are running out of time, if you don’t hurry up, the bombs may go off",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_1",
+      "Level": "Level_8",
+      "NumberOfClues": 4,
+      "NumberOfDoors": 1,
+      "LevelDescription": "Find the secret office and get the full team to CID Headquarters now",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_1",
+      "Level": "Level_9",
+      "NumberOfClues": 4,
+      "NumberOfDoors": 2,
+      "LevelDescription": "Scan reveal addresses and locations of all bombs and their Main Button. Which will auto-activate in (3 mins) Move fast!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_1",
+      "Level": "Level_10",
+      "NumberOfClues": 4,
+      "NumberOfDoors": 2,
+      "LevelDescription": "Hacker has given up completely now that Bomb has been disarmed, he was threatened by Barbosa - the arms-dealer I know where he will be - Catch him!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 5,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 5
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_2",
+      "Level": "Level_1",
+      "NumberOfClues": 6,
+      "NumberOfDoors": 3,
+      "LevelDescription": "A man’s Body was found on the tracks by a young couple. Daya Get to the Crime Scene and take their statement NOW!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_2",
+      "Level": "Level_2",
+      "NumberOfClues": 6,
+      "NumberOfDoors": 4,
+      "LevelDescription": "So they didn’t see anyone else? hmmm. His identity reveals he was an Angadiya. Daya find his Boss!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_2",
+      "Level": "Level_3",
+      "NumberOfClues": 6,
+      "NumberOfDoors": 3,
+      "LevelDescription": "Boss does not want to register a case, coz the Diamonds were illegally imported. Find out who else knew of this guy’s travel itinerary. Find his Family!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 6,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_2",
+      "Level": "Level_4",
+      "NumberOfClues": 6,
+      "NumberOfDoors": 3,
+      "LevelDescription": "Our investigation reveals that 2 other bodies found on the tracks last month were also DIAMOND Angadiyas. Daya get all their bosses to the HQ.",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_2",
+      "Level": "Level_5",
+      "NumberOfClues": 6,
+      "NumberOfDoors": 4,
+      "LevelDescription": "Daya, there has been another body on the track, secure the Crime Scene now!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_2",
+      "Level": "Level_6",
+      "NumberOfClues": 8,
+      "NumberOfDoors": 2,
+      "LevelDescription": "Investigations reveal that there was one person common to all the murders - Kingshuk, the Chaiwala. Daya Find him!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 5,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_2",
+      "Level": "Level_7",
+      "NumberOfClues": 8,
+      "NumberOfDoors": 3,
+      "LevelDescription": "Good Job on finding Kingshuk! He reveals he was given pictures through WhatsApp and money was transferred to his Paytm account. Daya go to the last known location.",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 6,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_2",
+      "Level": "Level_8",
+      "NumberOfClues": 8,
+      "NumberOfDoors": 1,
+      "LevelDescription": "We have to go back to the start. Daya, Find the only witnesses we had, the young couple!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 5,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_2",
+      "Level": "Level_9",
+      "NumberOfClues": 8,
+      "NumberOfDoors": 5,
+      "LevelDescription": "The boy from the couple is missing? Since the same night? Girl thinks her friend maybe involved? Daya go to his last known location - a deserted building!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 5,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_2",
+      "Level": "Level_10",
+      "NumberOfClues": 8,
+      "NumberOfDoors": 3,
+      "LevelDescription": "The Boy’s body was found next to the Girl, who was tied up, she was rescued by CID. It seems the boy has been dead for days. he did not die today. Where did the Girl go? It must be her! Daya find her!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 6,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 10
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_3",
+      "Level": "Level_1",
+      "NumberOfClues": 10,
+      "NumberOfDoors": 5,
+      "LevelDescription": "Pune DG just called me for our help. RDX has entered Pune city. It was headed to an Old Museum. Daya go to Pune asap - secure the Museum.",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 5,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 5,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_3",
+      "Level": "Level_2",
+      "NumberOfClues": 10,
+      "NumberOfDoors": 5,
+      "LevelDescription": "Good job evacuating Museum! Now Find the RDX inside the museum with the RDX Tracker.",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 5,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 5,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_3",
+      "Level": "Level_3",
+      "NumberOfClues": 10,
+      "NumberOfDoors": 7,
+      "LevelDescription": "Daya, the machine is continuing to beep! There is more RDX! Search through and secure the areas the machine is beeping in. Find the RDX.",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 7,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 6,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 5,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_3",
+      "Level": "Level_4",
+      "NumberOfClues": 10,
+      "NumberOfDoors": 8,
+      "LevelDescription": "Daya - The Man you found with traces of RDX on his hands claims to have helped a woman with her bags opp Fergusson College. She could be a Suicide Bomber! Find Her!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 8,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 5,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_3",
+      "Level": "Level_5",
+      "NumberOfClues": 10,
+      "NumberOfDoors": 8,
+      "LevelDescription": "No Sign of woman there? That auto driver who saw her leave in another auto half hour back - find him",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 8,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 5,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_3",
+      "Level": "Level_6",
+      "NumberOfClues": 12,
+      "NumberOfDoors": 4,
+      "LevelDescription": "Local police have called in an explosion in an Auto - Daya Secure the Crime Scene.",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 6,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_3",
+      "Level": "Level_7",
+      "NumberOfClues": 12,
+      "NumberOfDoors": 2,
+      "LevelDescription": "Autodriver had parked in a quiet space 10 mins ago and gone for lunch - Auto Driver luckily alive, says he dropped her to Laxmi Road - a crowded market area - Find her now DAYA.",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 7,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 6,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_3",
+      "Level": "Level_8",
+      "NumberOfClues": 12,
+      "NumberOfDoors": 4,
+      "LevelDescription": "She dropped a bag and ran. Daya you catch her, we will diffuse the bomb in the bag",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 8,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 6,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_3",
+      "Level": "Level_9",
+      "NumberOfClues": 12,
+      "NumberOfDoors": 3,
+      "LevelDescription": "Congrats on the arrest Daya - She says she’s being forced - her son is being held somewhere, she’s given us an address! Daya go there NOW",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 5,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 6,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_3",
+      "Level": "Level_10",
+      "NumberOfClues": 12,
+      "NumberOfDoors": 3,
+      "LevelDescription": "The address was fake!?? - Daya the RDX Tracker keeps beeping around her - it seems to be inside her Daya, she is a suicide bomber - catch her.",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 6,
+          "RewardType": "Coins",
+          "RewardAmount": 15
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_4",
+      "Level": "Level_1",
+      "NumberOfClues": 14,
+      "NumberOfDoors": 1,
+      "LevelDescription": "A man collapsed and died on the streets near Kalbadevi... he has the words CID painted on his chest. Daya secure the crime scene and take charge of the body.",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 9,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 7,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_4",
+      "Level": "Level_2",
+      "NumberOfClues": 14,
+      "NumberOfDoors": 1,
+      "LevelDescription": "The dead man’s nails are going blue. Forensics says its a laundry detergent used by commercial laundries. Daya , we need to find that laundry - start where he died",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 5,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 7,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_4",
+      "Level": "Level_3",
+      "NumberOfClues": 14,
+      "NumberOfDoors": 1,
+      "LevelDescription": "The press has brought a package to CID HQ, Daya secure the package.",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 10,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 7,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_4",
+      "Level": "Level_4",
+      "NumberOfClues": 14,
+      "NumberOfDoors": 1,
+      "LevelDescription": "The package seems to be from the killer. It contains a tablet with a clue and code entry software. Killer is playing games with us. We have to go to the location described by the clue.",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 7,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_4",
+      "Level": "Level_5",
+      "NumberOfClues": 14,
+      "NumberOfDoors": 1,
+      "LevelDescription": "Daya take the package to Forensics now! And get yourself inoculated",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 7,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_4",
+      "Level": "Level_6",
+      "NumberOfClues": 14,
+      "NumberOfDoors": 1,
+      "LevelDescription": "Time’s running out - This is the first  clue - 313 mcmxi pigeons. We have 1 hour to solve it and save a life.Daya head to the Gateway!Remember we dont have much time left. ",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 9,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 6,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 7,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_4",
+      "Level": "Level_7",
+      "NumberOfClues": 14,
+      "NumberOfDoors": 1,
+      "LevelDescription": "Daya good job finding the clue! You found the smiley poster on a blind beggar with a code on it. Daya we have entered the code in time - he has sent us a video releasing 1 victim! \nWe will have to play the killer’s game till we catch him! Daya yes, Chase the man in the hoodie.",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 7,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 7,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_4",
+      "Level": "Level_8",
+      "NumberOfClues": 14,
+      "NumberOfDoors": 1,
+      "LevelDescription": "Daya, the chase may have cost us time! should we head to his drop-off.",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 6,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 7,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_4",
+      "Level": "Level_9",
+      "NumberOfClues": 14,
+      "NumberOfDoors": 1,
+      "LevelDescription": "let’s focus!\nDaya Chase the 2nd clue 'aisi muskurahat jo sone ki pahadi mai milti hai' Could he mean Queen’s necklace - Daya Go to Marine Drive Now!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 8,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 7,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_4",
+      "Level": "Level_10",
+      "NumberOfClues": 14,
+      "NumberOfDoors": 1,
+      "LevelDescription": "Find the people he helped us catch. Maybe this is a revenge killing",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 7,
+          "RewardType": "Coins",
+          "RewardAmount": 20
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_5",
+      "Level": "Level_1",
+      "NumberOfClues": 16,
+      "NumberOfDoors": 1,
+      "LevelDescription": "The third clue is here. 'Jogging University Hanging Under Bay Elephant Arabian Coast High' if you take only those it spells out - J.U.H.U.B.E.A.C.H. Daya get to JUHU BEACH now!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 10,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 8,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_5",
+      "Level": "Level_2",
+      "NumberOfClues": 16,
+      "NumberOfDoors": 1,
+      "LevelDescription": "Good Job Daya! The 3rd person has been released. We have no way of knowing if he has injected these people or not, but we have to keep getting them released while we hunt the killer, Daya find him!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 5,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 8,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_5",
+      "Level": "Level_3",
+      "NumberOfClues": 16,
+      "NumberOfDoors": 1,
+      "LevelDescription": "Daya head to the company now. We must find out what the company has to do with this.",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 6,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 1,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 8,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_5",
+      "Level": "Level_4",
+      "NumberOfClues": 16,
+      "NumberOfDoors": 1,
+      "LevelDescription": "4th Clue:'yahaan hai khaadi aur samundar, indradhanush aur badal ka garajna hain jiske andar, pass hi mein hai chaino aman ka anubhav..' GORAI has a pagoda… Daya head there!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 6,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 8,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_5",
+      "Level": "Level_5",
+      "NumberOfClues": 16,
+      "NumberOfDoors": 1,
+      "LevelDescription": "Daya head to the Jail, Find Maya.",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 7,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 8,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_5",
+      "Level": "Level_6",
+      "NumberOfClues": 16,
+      "NumberOfDoors": 1,
+      "LevelDescription": "So someone else has done this - someone who knew about the virus, from Maya - maybe someone from his cell in Jail. Daya, find out who was the cell mate that died.",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 5,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 12,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 8,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_5",
+      "Level": "Level_7",
+      "NumberOfClues": 16,
+      "NumberOfDoors": 1,
+      "LevelDescription": "Next clue 'sone ke sikke, jo hai khaas, sukhe patte par itihaas, naksho ka dher, jahaan mile kala ghoda our sher', It’s Asiatic library. Get there Daya!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 11,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 2,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 8,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_5",
+      "Level": "Level_8",
+      "NumberOfClues": 16,
+      "NumberOfDoors": 1,
+      "LevelDescription": "Daya, the killer, possibly Vikrant has released 5th person, he says now that all are free, they will spread the virus. If she has the victims with her, she’s headed where she can cause the virus to spread - a crowded place? SION station is closeby - Daya, go there now! ",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 3,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 5,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 8,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_5",
+      "Level": "Level_9",
+      "NumberOfClues": 16,
+      "NumberOfDoors": 1,
+      "LevelDescription": "Find Vikrant - nurse has given his location in the jungle! Let’s catch him!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 4,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 10,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 8,
+          "RewardType": "Coins",
+          "RewardAmount": 25
+        }
+      ]
+    },
+    {
+      "Chapter": "Chapter_5",
+      "Level": "Level_10",
+      "NumberOfClues": 16,
+      "NumberOfDoors": 1,
+      "LevelDescription": "Daya, Look behind you - Vikrant is escaping in a car! Catch him!",
+      "StoryImageName": "StoryImg_1",
+      "LightingOptions": "Day",
+      "CoinReward": 0,
+      "StarReward": [
+        0,
+        0,
+        0
+      ],
+      "Objectives": [
+        {
+          "ObjectiveType": "BreakDoors",
+          "CompletionValue": 6,
+          "RewardType": "Coins",
+          "RewardAmount": 100
+        },
+        {
+          "ObjectiveType": "KillGoons",
+          "CompletionValue": 5,
+          "RewardType": "Coins",
+          "RewardAmount": 100
+        },
+        {
+          "ObjectiveType": "CollectClues",
+          "CompletionValue": 8,
+          "RewardType": "Coins",
+          "RewardAmount": 100
+        }
+      ]
+    }
+  ],
+  "ChapterData": [
+    {
+      "Chapter": "Chapter_1",
+      "ChapterName": "The Roaring Lion Case",
+      "CluesToUnlock": 10,
+      "XPToUnlock": -1,
+      "LevelToUnlock": -1,
+      "AdsToUnlock": -1,
+      "CoinsToUnlock": -1
+    },
+    {
+      "Chapter": "Chapter_2",
+      "ChapterName": "Blood Diamonds",
+      "CluesToUnlock": 20,
+      "XPToUnlock": -1,
+      "LevelToUnlock": -1,
+      "AdsToUnlock": -1,
+      "CoinsToUnlock": 1
+    },
+    {
+      "Chapter": "Chapter_3",
+      "ChapterName": "RDX’d! Kamikaze Girl!",
+      "CluesToUnlock": 30,
+      "XPToUnlock": -1,
+      "LevelToUnlock": -1,
+      "AdsToUnlock": -1,
+      "CoinsToUnlock": -1
+    },
+    {
+      "Chapter": "Chapter_4",
+      "ChapterName": "Big Bloody Smiley",
+      "CluesToUnlock": 40,
+      "XPToUnlock": -1,
+      "LevelToUnlock": -1,
+      "AdsToUnlock": -1,
+      "CoinsToUnlock": -1
+    },
+    {
+      "Chapter": "Chapter_5",
+      "ChapterName": "Big Bloody Smiley 2",
+      "CluesToUnlock": 50,
+      "XPToUnlock": -1,
+      "LevelToUnlock": -1,
+      "AdsToUnlock": -1,
+      "CoinsToUnlock": -1
+    }
+  ],
+  "Constants": {
+    "PLAYER_ACCELERATION_START": 45,
+    "PLAYER_ACCELERATION_END": 60,
+    "PLAYER_ACCELERATION_TIME": 150,
+    "REVIVE_INVULNERABLE_TIME": 3,
+    "REVIVE_MAX_TIME": 5,
+    "REVIVE_COIN_COST": 5000,
+    "REVIVE_DESTORY_DISTANCE": 50,
+    "JETPACK_STANDIN_DESTROY_DISTANCE": 200,
+    "DEFAULT_POWERUP_DURATION": 3
+  }
+}

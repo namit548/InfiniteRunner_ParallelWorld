@@ -1,0 +1,537 @@
+{
+    "Version": 1,
+    "CurrentCoins": 0,
+    "LifetimeCoins": 0,
+    "LifetimeDoorsBroken": 0,
+    "PlayerLevel": 1,
+    "PlayerXP": 0,
+    "AdsWatchedForChapterUnlock": 0,
+    "SelectedChapter": "Chapter_1",
+    "SelectedLevel": "Level_1",
+    "HasPurchasedDoubleCoinsIAP": false,
+    "LevelState": [
+        {
+            "Chapter": "Chapter_1",
+            "Level": "Level_1",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Unlocked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_1",
+            "Level": "Level_2",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_1",
+            "Level": "Level_3",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_1",
+            "Level": "Level_4",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_1",
+            "Level": "Level_5",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_1",
+            "Level": "Level_6",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_1",
+            "Level": "Level_7",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_1",
+            "Level": "Level_8",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_1",
+            "Level": "Level_9",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_1",
+            "Level": "Level_10",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_2",
+            "Level": "Level_1",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_2",
+            "Level": "Level_2",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_2",
+            "Level": "Level_3",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_2",
+            "Level": "Level_4",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_2",
+            "Level": "Level_5",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_2",
+            "Level": "Level_6",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_2",
+            "Level": "Level_7",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_2",
+            "Level": "Level_8",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_2",
+            "Level": "Level_9",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_2",
+            "Level": "Level_10",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_3",
+            "Level": "Level_1",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_3",
+            "Level": "Level_2",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_3",
+            "Level": "Level_3",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_3",
+            "Level": "Level_4",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_3",
+            "Level": "Level_5",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_3",
+            "Level": "Level_6",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_3",
+            "Level": "Level_7",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_3",
+            "Level": "Level_8",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_3",
+            "Level": "Level_9",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_3",
+            "Level": "Level_10",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_4",
+            "Level": "Level_1",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_4",
+            "Level": "Level_2",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_4",
+            "Level": "Level_3",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_4",
+            "Level": "Level_4",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_4",
+            "Level": "Level_5",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_4",
+            "Level": "Level_6",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_4",
+            "Level": "Level_7",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_4",
+            "Level": "Level_8",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_4",
+            "Level": "Level_9",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_4",
+            "Level": "Level_10",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_5",
+            "Level": "Level_1",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_5",
+            "Level": "Level_2",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_5",
+            "Level": "Level_3",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_5",
+            "Level": "Level_4",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_5",
+            "Level": "Level_5",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_5",
+            "Level": "Level_6",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_5",
+            "Level": "Level_7",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_5",
+            "Level": "Level_8",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_5",
+            "Level": "Level_9",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        },
+        {
+            "Chapter": "Chapter_5",
+            "Level": "Level_10",
+            "CluesCollected": [],
+            "MissionsCompleted": [],
+            "RewardsCollected": [],
+            "DistanceRun": 0,
+            "LevelLockState": "Locked",
+            "LevelRewardState": "Locked"
+        }
+    ],
+    "PowerupState": [
+        {
+            "PowerUpType": "Vacuum",
+            "PowerupLevel": 1,
+            "Duration": 3
+        },
+        {
+            "PowerUpType": "Multiplier",
+            "PowerupLevel": 1,
+            "Duration": 3
+        },
+        {
+            "PowerUpType": "JumpingBoots",
+            "PowerupLevel": 1,
+            "Duration": 3
+        },
+        {
+            "PowerUpType": "JetpackStandIn",
+            "PowerupLevel": 1,
+            "Duration": 0
+        }
+    ],
+    "IAPsPurchased": []
+}

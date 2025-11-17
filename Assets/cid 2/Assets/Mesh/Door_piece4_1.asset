@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4300000
+Mesh:
+  serializedVersion: 9
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Door_piece4
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 72
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 42
+    localAABB:
+      m_Center: {x: 2.3283064E-10, y: 0, z: 2.415618E-09}
+      m_Extent: {x: 0.0056713447, y: 0.011298045, z: 0.000603435}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes:
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 00000100020000000200030004000500060006000700040007000800040008000900040009000a0004000b000c000d000d000e000b000e000f000b000e0010000f000e00110010001200130014001200140015001600170018001600180019001a001b001c001a001c001d001e001f0020001e0020002100220023002400220024002500260027002800260028002900
+  m_VertexData:
+    serializedVersion: 2
+    m_VertexCount: 42
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1344
+    _typelessdata: afd6b9bb6f1b39bc00301e3a000080bf0000000000000000af734e3f5c85113fafd6b9bba210383c00301e3a000080bf0000000000000000601c893e78a6113fafd6b9bb6f1b393cad2f1eba000080bf0000000000000000e651883edea5113fafd6b9bb6f1b39bcad2f1eba000080bf0000000000000000b8754e3f6083113f1f9ea3ba6f1b39bcad2f1eba0000000000000000000080bfde7b4e3f752e2a3fafd6b9bb6f1b39bcad2f1eba0000000000000000000080bfb8754e3f6083113fafd6b9bb6f1b393cad2f1eba0000000000000000000080bfe651883edea5113f859942bb546be03bad2f1eba0000000000000000000080bf42d0be3ee5b0203f707ffaba021c173aad2f1eba0000000000000000000080bf5ecd053f328e263fcf2da53b12aba5bbad2f1eba0000000000000000000080bfea4f283f784b4d3ff8c6503bd42706bcad2f1eba0000000000000000000080bf5f793b3feced423ff06f56bbab05d83b00301e3a00000000000000000000803fb2f8c13ec0001f3fafd6b9bba210383c00301e3a00000000000000000000803f601c893e78a6113fafd6b9bb6f1b39bc00301e3a00000000000000000000803faf734e3f5c85113f739daaba6f1b39bc00301e3a00000000000000000000803fec784e3f38e2293f8f7314bb53ce813a00301e3a00000000000000000000803f4646033fc795243fb0d6b93b1022a8bb00301e3a00000000000000000000803fddc7283f93cc503f66d37d3bd2ab07bc00301e3a00000000000000000000803f3c0b3c3f0cc0463f707ffaba021c173aad2f1ebaec151c3fafb7453f997936be2bbe263f49405d3f8f7314bb53ce813a00301e3ae9151c3fafb7453f987936be13db263fd66a573fb0d6b93b1022a8bb00301e3ae9151c3fafb7453f977936beabce363f0b86573fcf2da53b12aba5bbad2f1ebaea151c3fafb7453f987936be2bdc343f60585d3f859942bb546be03bad2f1ebaae48743fd4ee293e91c37e3e2bbe263f49405d3ff06f56bbab05d83b00301e3aae48743fd4ee293e91c37e3e2be8273fa16c573f8f7314bb53ce813a00301e3aae48743fd4ee293e91c37e3ed68a343f2982573f707ffaba021c173aad2f1ebab048743fd5ee293e92c37e3e2bdc343f60585d3fafd6b9bb6f1b393cad2f1eba3cf15b3fc5d3f63e61bf2f3e2bbe263f49405d3fafd6b9bba210383c00301e3a3cf15b3fc6d3f63e61bf2f3ec3c0273f5e6c573ff06f56bbab05d83b00301e3a3cf15b3fc5d3f63e60bf2f3ebd60353f9e83573f859942bb546be03bad2f1eba3cf15b3fc5d3f63e60bf2f3e2bdc343f60585d3f1f9ea3ba6f1b39bcad2f1eba00000000000080bf000000002bbe263f49405d3f739daaba6f1b39bc00301e3a00000000000080bf000000000ed1273f796c573fafd6b9bb6f1b39bc00301e3a00000000000080bf0000000006be353f4284573fafd6b9bb6f1b39bcad2f1eba00000000000080bf000000002bdc343f60585d3ff8c6503bd42706bcad2f1eba019d073fe2ab54bf8d152fbe2bbe263f49405d3f66d37d3bd2ab07bc00301e3a009d073fe2ab54bf8d152fbe89df253f2969573f739daaba6f1b39bc00301e3a019d073fe2ab54bf8c152fbe70e4353f9284573f1f9ea3ba6f1b39bcad2f1eba009d073fe2ab54bf8d152fbe2bdc343f60585d3fcf2da53b12aba5bbad2f1ebade62453fcc95e5be6e7ee7be2bbe263f49405d3fb0d6b93b1022a8bb00301e3ade62453fcc95e5be6e7ee7be6d90253fa268573f66d37d3bd2ab07bc00301e3adf62453fcb95e5be6c7ee7be316a333f2880573ff8c6503bd42706bcad2f1ebadd62453fcf95e5be707ee7be2bdc343f60585d3f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 2.3283064E-10, y: 0, z: 2.415618E-09}
+    m_Extent: {x: 0.0056713447, y: 0.011298045, z: 0.000603435}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh:
+  m_BakedTriangleCollisionMesh:
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimized: 1

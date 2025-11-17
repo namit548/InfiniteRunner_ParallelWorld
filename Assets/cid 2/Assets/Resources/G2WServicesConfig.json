@@ -1,0 +1,239 @@
+{
+    "App": {
+        "Name": "Daya Darvaaza Tod Do!",
+        "Android": 1.1,
+        "iOS": 1.0,
+        "FeedbackUrl": "http://s01.appucino.com/feedback/submit",
+        "GameIdAndroid": "cid_android",
+        "GameIdiOS": "cid_ios"
+    },
+
+    "DynamicDataLinks": {
+        "Android": "http://s01.appucino.com/games/init?game_id=ssd_android_1_3",
+        "iOS": "http://s01.appucino.com/games/init?game_id=ssd_ios_1_"
+    },
+
+    "PermissionLinks": {
+        "ToSLink": "http://www.games2win.com/corporate/terms-of-service.asp",
+        "PrivacyLink": "http://www.games2win.com/corporate/privacy-policy.asp"
+    },
+
+    "RateUsLinks":  {
+        "Android": "market://details?id=com.games2win.dayadarwazatoddo",
+        "iOS": "itms-apps://itunes.apple.com/en/app/id1452983113",
+        "iOSPre7": "itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=1452983113"
+    },
+
+    "Ads": {
+        "MoPub": {
+            "Android": {
+                "Phone": {
+                    "Banner": "711e772cb75f41f89d752b654b958e20",
+                    "Interstitial": "5de01b9b96124ebfb0a690cb69b3a711",
+                    "ExitAd": ""
+                },
+                "Tab": {
+                    "Banner": "c32baff95f8c4b629714b2e2f3d8392d",
+                    "Interstitial": "49983fa6b7ad4295871a26ab3585f469",
+                    "ExitAd": ""
+                }
+            },
+            "iOS": {
+                "Phone": {
+                    "Banner": "df84276f5dd642bb97790ba32b058f3b",
+                    "Interstitial": "31d437c4ada04424995a3f99f7334c1b",
+                    "ExitAd": ""
+                },
+                "Tab": {
+                    "Banner": "8e713eb7037e4b3b88e8edfd89b0d66b",
+                    "Interstitial": "a4bcfdd83ec84f36b357c1d7eab30d1a",
+                    "ExitAd": ""
+                }
+            }
+        },
+        "IronSource":  {
+            "Android": {
+                "AppKey": "821155ad"
+            },
+            "iOS": {
+                "AppKey": "8974e635"
+            }
+        },
+        "UnityAds":  {
+            "Android":  {
+
+            },
+            "iOS":  {
+
+            }
+        },
+        "Applovin": {
+            "Android": "c0Aepe1g6Zfi5s4lgAlDi9L_p-gAkAqLA-_-d0elZIRf9WPrh83OIOO5N4F5E4RO2RNfR1O0KrfUM4J3DMRVmr",
+            "iOS": "c0Aepe1g6Zfi5s4lgAlDi9L_p-gAkAqLA-_-d0elZIRf9WPrh83OIOO5N4F5E4RO2RNfR1O0KrfUM4J3DMRVmr"
+        },
+        "Ogury": {
+            "Android": {
+                "AppKey": "274999"
+            },
+            "iOS": {
+                "AppKey": ""
+            }
+        }
+    },
+
+    "PNS":  {
+        "Comments":  {
+            "Id": "PNS ID provided by the publishing team",
+            "GCMId": "DO NOT change the GCM id - its Games2win's GCM sender id"
+        },
+        "Android":  {
+            "Id":  "127",
+            "Host": "androidpns.games2win.com/android_devices/add",
+            "GCMId": "637939466018"
+        },
+        "iOS":  {
+            "Id":  "238",
+            "Host": "pns.games2win.com/apns/devices/register?task=register"
+        }
+    },
+
+    "IAP": {
+        "Comments": {
+            "SKU": "The SKU from the App Store or Play Store.",
+            "DisplayName": "The name to display in game",
+            "ImageName":  "Name of an image (optional)",
+            "PrefsKey": "Optional. Key in PlayerPrefs",
+            "BasePrice": "Price for the IAP",
+            "Reward": "The amount of the reward (eg, number of coins)"
+        },
+        "Android": {
+            "Prefix": "com.games2win.dayadarwazatoddo",
+            "PrefixComment": "Useful to help quickly define products. ",
+            "DoesPurchaseUnlockNoAds": true,
+            "PublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtZzgBIZVSfRfLBGDpyNhnzlyB2sgb5LKyWWBTBCgAWGI+XwMGRtd2huj4iTP665Ex2LcsvyPusmgpfZmgGh4crKOr+yQJUzQhOSUApIJ9GdUng8zU6TF4HHGRtdv6YCWY1sJiPuYwSCs29023MiQ5A4EtRE8fZvAA7yfvbuvf+aqH7Cwevf+RgTvECs7FuKf4WPn8DhRYsfd6I+4+u360NOBo8ZT/S6ZdYz4vik5QcNr0I4jKJl84JeDZqsJLcbZQE9V53pS1sqi6CmwDq/XP2EF4up102KCOoroXzJadXgzJqHHQ6UBTOHpbJtxp4NGOGqQkCPU8eVmK9iz832EbQIDAQAB",
+            "Products": [
+                {
+                    "SKU": "coinpack1",
+                    "DisplayName": "Pack of {0} coins",
+                    "ImageName": "coinpack1",
+                    "PrefsKey": "",
+                    "BasePrice": "$0.99",
+                    "Reward": 1000
+                },
+                {
+                    "SKU": "coinpack2",
+                    "DisplayName": "Pack of {0} coins",
+                    "ImageName": "coinpack2",
+                    "PrefsKey": "",
+                    "BasePrice": "$1.99",
+                    "Reward": 2500
+                },
+                {
+                    "SKU": "coinpack3",
+                    "DisplayName": "Pack of {0} coins",
+                    "ImageName": "coinpack3",
+                    "PrefsKey": "",
+                    "BasePrice": "$2.99",
+                    "Reward": 5000
+                },
+                {
+                    "SKU": "coinpack4",
+                    "DisplayName": "Pack of {0} coins",
+                    "ImageName": "coinpack4",
+                    "PrefsKey": "",
+                    "BasePrice": "$4.99",
+                    "Reward": 10000
+                },
+                {
+                    "SKU": "noads",
+                    "DisplayName": "Remove Ads",
+                    "ImageName": "noads",
+                    "PrefsKey": "",
+                    "BasePrice": "$0.99",
+                    "Reward": 1
+                }
+            ]
+        },
+        "iOS": {
+            "Prefix": "com.games2win.dayadarwazatoddo",
+            "DoesPurchaseUnlockNoAds": true,
+            "Products": [
+                {
+                    "SKU": "coinpack1",
+                    "DisplayName": "Pack of {0} coins",
+                    "ImageName": "coinpack1",
+                    "PrefsKey": "",
+                    "BasePrice": "$0.99",
+                    "Reward": 1000
+                },
+                {
+                    "SKU": "coinpack2",
+                    "DisplayName": "Pack of {0} coins",
+                    "ImageName": "coinpack2",
+                    "PrefsKey": "",
+                    "BasePrice": "$1.99",
+                    "Reward": 2500
+                },
+                {
+                    "SKU": "coinpack3",
+                    "DisplayName": "Pack of {0} coins",
+                    "ImageName": "coinpack3",
+                    "PrefsKey": "",
+                    "BasePrice": "$2.99",
+                    "Reward": 5000
+                },
+                {
+                    "SKU": "coinpack4",
+                    "DisplayName": "Pack of {0} coins",
+                    "ImageName": "coinpack4",
+                    "PrefsKey": "",
+                    "BasePrice": "$4.99",
+                    "Reward": 10000
+                },
+                {
+                    "SKU": "noads",
+                    "DisplayName": "No Ads",
+                    "ImageName": "noads",
+                    "PrefsKey": "",
+                    "BasePrice": "$0.99",
+                    "Reward": 1
+                }
+            ]
+        }
+    },
+
+    "RemoteConfig" : {
+        "CacheExpirationTime": 30,
+		
+        "Defaults": {
+            "coin_balance": 0,
+            "coinpack1": 1000,
+            "coinpack2": 2500,
+            "coinpack3": 5000,
+            "coinpack4": 10000,
+            "interstitial_timer":  60,
+            "chapter_unlock_level": 5,
+            "more_games": "{\"one\":{\"campaign\":\"int_fs_in_decisions_android\",\"image_url\":\"http:\/\/cdn.adoption.games2win.com\/ios_promo\/ingame_promos\/also_play\/decisions\/infs_in_decisions_v1.png\",\"click_url\":\"https:\/\/play.google.com\/store\/apps\/details?id=air.com.games2win.internationalfashionstylist&referrer=utm_source%3Dalso_play%26utm_campaign%3DINT_FS_in_decisions\",\"thumb_image_url\":\"\"},\"two\":{\"campaign\":\"ff_in_decisions_android\",\"image_url\":\"http:\/\/cdn.adoption.games2win.com\/ios_promo\/ingame_promos\/also_play\/decisions\/ffs_in_decisions_v2.png\",\"click_url\":\"https:\/\/play.google.com\/store\/apps\/details?id=com.games2win.friendsforever&referrer=utm_source%3Dalso_play%26utm_campaign%3DFF_in_decisions\",\"thumb_image_url\":\"\"}}",
+            "ingame_multi_promo": "{\"1\":{\"campaign\":\"int_fs_in_decisons_android\",\"image_url\":\"http:\/\/cdn.adoption.games2win.com\/ios_promo\/ingame_promos\/yoyo\/infs_yoyo_android.png\",\"click_url\":\"https:\/\/play.google.com\/store\/apps\/details?id=air.com.games2win.internationalfashionstylist&referrer=utm_source%3Dyoyo%26utm_campaign%3DINTFS_in_decisions\"},\"2\":{\"campaign\":\"ff_in decisions_android_yoyo\",\"image_url\":\"http:\/\/cdn.adoption.games2win.com\/ios_promo\/ingame_promos\/yoyo\/ffs_yoyo_android.png\",\"click_url\":\"https:\/\/play.google.com\/store\/apps\/details?id=com.games2win.friendsforever&referrer=utm_source%3Dcross_pns%26utm_campaign%3DFF_in_decisions\"}}",
+            "powerup_vacuum_cost": "350,500,1000,2000",
+            "powerup_vacuum_duration": "6,9,12,15",
+            "powerup_multiplier_cost": "350,500,1000,2000",
+            "powerup_multiplier_duration": "6,9,12,15",
+            "grace_plays": 3,
+            "latest_version": 1.0,
+            "retries_unlock_next_level": 3,
+    			"unlock_Chapter_2": 9,
+    			"unlock_Chapter_3": 38,
+    			"unlock_Chapter_4": 87,
+    			"unlock_Chapter_5": 154,
+    			"gift_Interval": 0.25,
+    			"revive_skip_coins": 25,
+    			"reward_Value": "100,125,150,175",
+    			"clues_for_level_complete_chapter_1": "1,1,1,1,1,2,2,2,2,2",
+    			"clues_for_level_complete_chapter_2": "3,3,3,3,3,4,4,4,4,4",
+    			"clues_for_level_complete_chapter_3": "5,5,5,5,5,6,6,6,6,6",
+    			"clues_for_level_complete_chapter_4": "7,7,7,7,7,7,7,7,7,7",
+    			"clues_for_level_complete_chapter_5": "8,8,8,8,8,8,8,8,8,8"
+        }
+    }
+}
