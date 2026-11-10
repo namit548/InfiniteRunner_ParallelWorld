@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public float laneDistance = 3f;
+    [SerializeField, Min(0.01f)] private float laneChangeDuration = 0.25f;
+    private float firstLaneX;
     public int laneNumber = 1;
     public float force = 10f;
 
@@ -37,6 +39,7 @@ public class PlayerController : MonoBehaviour
         GaliSound.Play();
         myAnim = GetComponent<Animator>();//
         _rb = GetComponent<Rigidbody>();
+        firstLaneX = _rb.position.x - laneNumber * laneDistance;
         gameOverPanel.SetActive(false);
         BackgroundSOund.enabled = true;
     }
@@ -51,13 +54,11 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftArrow) && laneNumber >= 1)
         {
-            transform.position = new Vector3(transform.position.x - laneDistance, transform.position.y, transform.position.z);
-            laneNumber--;
+            SwipeLeft();
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow) && laneNumber <= 1)
         {
-            transform.position = new Vector3(transform.position.x + laneDistance, transform.position.y, transform.position.z);
-            laneNumber++;
+            SwipeRight();
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow))
         {
@@ -135,22 +136,24 @@ public class PlayerController : MonoBehaviour
 
 
 
+    private void FixedUpdate()
+    {
+        float targetX = firstLaneX + laneNumber * laneDistance;
+        float speed = Mathf.Abs(laneDistance) / laneChangeDuration;
+        float nextX = Mathf.MoveTowards(_rb.position.x, targetX, speed * Time.fixedDeltaTime);
+        Vector3 velocity = _rb.linearVelocity;
+        velocity.x = (nextX - _rb.position.x) / Time.fixedDeltaTime;
+        _rb.linearVelocity = velocity;
+    }
+
     public void SwipeLeft()
     {
-        if (laneNumber >= 1)
-        {
-            transform.position = new Vector3(transform.position.x - laneDistance, transform.position.y, transform.position.z);
-            laneNumber--;
-        }
+        laneNumber = Mathf.Max(0, laneNumber - 1);
     }
 
     public void SwipeRight()
     {
-        if (laneNumber <= 1)
-        {
-            transform.position = new Vector3(transform.position.x + laneDistance, transform.position.y, transform.position.z);
-            laneNumber++;
-        }
+        laneNumber = Mathf.Min(2, laneNumber + 1);
     }
 
     public void SwipeUp()
