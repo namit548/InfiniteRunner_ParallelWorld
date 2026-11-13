@@ -36,12 +36,16 @@ public class PlayerController : MonoBehaviour
 
     public void Start()
     {
-        GaliSound.Play();
+        if (GaliSound != null) GaliSound.Play();
         myAnim = GetComponent<Animator>();//
         _rb = GetComponent<Rigidbody>();
         firstLaneX = _rb.position.x - laneNumber * laneDistance;
         gameOverPanel.SetActive(false);
-        BackgroundSOund.enabled = true;
+        if (BackgroundSOund != null)
+        {
+            BackgroundSOund.enabled = true;
+            if (!BackgroundSOund.isPlaying) BackgroundSOund.Play();
+        }
     }
     private void Update()
     {
@@ -208,7 +212,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Game Over");
             Time.timeScale = 0f;
-            BackgroundSOund.enabled = false;
+            if (BackgroundSOund != null) BackgroundSOund.Stop();
             gameOverPanel.SetActive(true);
         }
 
