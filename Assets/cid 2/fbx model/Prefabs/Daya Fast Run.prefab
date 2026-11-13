@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneDistance: 3
   laneNumber: 1
-  force: 14
+  jumpHeight: 3.8
   isJumped: 0
   gameOverPanel: {fileID: 0}
   GaliSound: {fileID: 0}

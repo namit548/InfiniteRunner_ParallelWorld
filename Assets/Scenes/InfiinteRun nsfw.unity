@@ -758,7 +758,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 626fca1c7db1da5499d191188e12a8c2, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2349,7 +2349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1335992441
 Transform:
   m_ObjectHideFlags: 0
@@ -2728,6 +2728,10 @@ PrefabInstance:
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 2094651565}
+    - target: {fileID: 2391354548926624535, guid: b6a01411241f64e49aea7c913709d379, type: 3}
+      propertyPath: galiSoundDelay
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2391354548926624535, guid: b6a01411241f64e49aea7c913709d379, type: 3}
       propertyPath: BackgroundSOund
       value: 

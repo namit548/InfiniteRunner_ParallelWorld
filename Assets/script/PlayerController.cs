@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField, Min(0.01f)] private float laneChangeDuration = 0.25f;
     private float firstLaneX;
     public int laneNumber = 1;
-    public float force = 10f;
+    [SerializeField, Min(0.1f)] private float jumpHeight = 3.8f;
 
 
     //public float minX = -3f, maxX = 3f;
@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
 
     //  public AudioSource ;
     public AudioSource GaliSound, BackgroundSOund;
+    [SerializeField, Min(0f)] private float galiSoundDelay = 2.5f;
 
 
     // Swipe
@@ -36,8 +37,9 @@ public class PlayerController : MonoBehaviour
 
     public void Start()
     {
-        if (GaliSound != null) GaliSound.Play();
-        myAnim = GetComponent<Animator>();//
+        if (GaliSound != null) Invoke(nameof(EnableGaliSound), galiSoundDelay);
+        myAnim = GetComponent<Animator>();
+        myAnim.applyRootMotion = false;
         _rb = GetComponent<Rigidbody>();
         firstLaneX = _rb.position.x - laneNumber * laneDistance;
         gameOverPanel.SetActive(false);
@@ -47,6 +49,11 @@ public class PlayerController : MonoBehaviour
             if (!BackgroundSOund.isPlaying) BackgroundSOund.Play();
         }
     }
+    private void EnableGaliSound()
+    {
+        if (GaliSound != null) GaliSound.gameObject.SetActive(true);
+    }
+
     private void Update()
     {
 
@@ -66,13 +73,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            if (!isJumped)
-            {
-                _rb.AddForce(Vector3.up * force, ForceMode.Impulse);
-                isJumped = true;
-                isJumping = true;
-                isRunning = true;
-            }
+            SwipeUp();
 
         }
 
@@ -162,13 +163,13 @@ public class PlayerController : MonoBehaviour
 
     public void SwipeUp()
     {
-        if (!isJumped   )
-        {
-            _rb.AddForce(Vector3.up * force, ForceMode.Impulse);
-            isJumped = true;
-           // isJumping = true;
-            isRunning = true;
-        }
+        if (isJumped || Time.timeScale == 0f) return;
+        Vector3 velocity = _rb.linearVelocity;
+        velocity.y = Mathf.Sqrt(2f * Mathf.Abs(Physics.gravity.y) * jumpHeight);
+        _rb.linearVelocity = velocity;
+        isJumped = true;
+        isJumping = true;
+        myAnim.SetBool("Jump", true);
     }
 
 
@@ -188,8 +189,13 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground")
         {
+            if (_rb.linearVelocity.y > 0.1f) return;
+            bool landed = false;
+            for (int i = 0; i < collision.contactCount; i++)
+                if (collision.GetContact(i).normal.y > 0.5f) landed = true;
+            if (!landed) return;
             isJumped = false;
-            isJumping = true;
+            isJumping = false;
             isRunning = false;
 
 
@@ -210,6 +216,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag == "Obstacle")
         {
+            CancelInvoke(nameof(EnableGaliSound));
             Debug.Log("Game Over");
             Time.timeScale = 0f;
             if (BackgroundSOund != null) BackgroundSOund.Stop();
