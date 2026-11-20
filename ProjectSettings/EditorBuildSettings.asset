@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InfiinteRun.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/InfiinteRun nsfw.unity
     guid: 286893442a681ca419eeaaf3a954e71b
   m_configObjects:
