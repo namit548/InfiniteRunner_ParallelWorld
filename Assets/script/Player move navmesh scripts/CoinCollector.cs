@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public sealed class CoinCollector : MonoBehaviour
 {
     private const int BagCapacity = 3;
+    private const int CoinsPerHousePiece = 3;
     private const string SafeZoneTag = "SafeZone";
     private static readonly int CoinAnimationState = Animator.StringToHash("Base Layer.Coin");
     [SerializeField] private Animator CoinAnimator;
@@ -15,6 +16,7 @@ public sealed class CoinCollector : MonoBehaviour
     [SerializeField] private Transform coins;
     [SerializeField] private TMP_Text collectedText;
     [SerializeField] private TMP_Text bagText;
+    [SerializeField] private GameObject[] housePieces = new GameObject[0];
 
     private int carriedCount;
     private int depositedCount;
@@ -32,6 +34,7 @@ public sealed class CoinCollector : MonoBehaviour
 
         collectedText.text = "0";
         bagText.text = "0";
+        UpdateHouse();
 
         if (CoinAnimator != null)
         {
@@ -133,5 +136,16 @@ public sealed class CoinCollector : MonoBehaviour
         carriedCount = 0;
         bagText.text = "0";
         collectedText.text = depositedCount.ToString();
+        UpdateHouse();
+    }
+
+    private void UpdateHouse()
+    {
+        int unlockedPieces = depositedCount / CoinsPerHousePiece;
+        for (int i = 0; i < housePieces.Length; i++)
+        {
+            if (housePieces[i] != null)
+                housePieces[i].SetActive(i < unlockedPieces);
+        }
     }
 }
