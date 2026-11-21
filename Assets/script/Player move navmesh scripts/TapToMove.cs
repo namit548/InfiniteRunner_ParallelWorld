@@ -11,12 +11,14 @@ public sealed class TapToMove : MonoBehaviour
     private Camera viewCamera;
     private NavMeshAgent agent;
     private NavMeshPath path;
+    private NavMeshLocomotionAnimator locomotionAnimator;
 
     private void Awake()
     {
         viewCamera = Camera.main;
         agent = GetComponent<NavMeshAgent>();
         path = new NavMeshPath();
+        locomotionAnimator = GetComponent<NavMeshLocomotionAnimator>();
 
         if (ground == null || viewCamera == null)
         {
@@ -59,9 +61,12 @@ public sealed class TapToMove : MonoBehaviour
         };
 
         if (NavMesh.SamplePosition(groundHit.point, out NavMeshHit target, 0.5f, filter) &&
-            agent.CalculatePath(target.position, path) && path.status == NavMeshPathStatus.PathComplete)
+            agent.CalculatePath(target.position, path) &&
+            path.status == NavMeshPathStatus.PathComplete &&
+            agent.SetPath(path))
         {
-            agent.SetPath(path);
+            if (locomotionAnimator != null)
+                locomotionAnimator.OnPathAccepted();
         }
     }
 }
