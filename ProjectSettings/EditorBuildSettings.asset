@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Infinite Runner/starting Screen.unity
     guid: 9d7757091033b2348bf3f4109b9c8429
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Infinite Runner/InfiinteRun.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Infinite Runner/InfiinteRun nsfw.unity
     guid: 286893442a681ca419eeaaf3a954e71b
   - enabled: 1
