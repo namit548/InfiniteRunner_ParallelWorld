@@ -5,6 +5,8 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class EnemyPatrol : MonoBehaviour
 {
+    [SerializeField] private GameObject alertIndicator;
+
     [SerializeField] private Transform pointA;
     [SerializeField] private Transform pointB;
     [SerializeField] private Transform player;
@@ -14,6 +16,26 @@ public class EnemyPatrol : MonoBehaviour
     [SerializeField] private float chaseSpeed = 3f;
     [SerializeField] private float sightDistance = 6f;
     [SerializeField] private float giveUpDistance = 10f;
+    private Transform viewCamera;
+    
+//     private void Awake()
+// {
+//     if (Camera.main != null)
+//         viewCamera = Camera.main.transform;
+
+//     ShowAlert(false);
+// }
+private void LateUpdate()
+{
+    // Keep the icon facing the camera as the enemy turns.
+    if (alertIndicator != null && viewCamera != null)
+        alertIndicator.transform.rotation = viewCamera.rotation;
+}
+private void ShowAlert(bool visible)
+{
+    if (alertIndicator != null)
+        alertIndicator.SetActive(visible);
+}
 
     private IEnumerator Start()
     {
@@ -41,6 +63,7 @@ public class EnemyPatrol : MonoBehaviour
             if (chasing && distance > giveUpDistance)
             {
                 chasing = false;
+                ShowAlert(false);
                 agent.speed = patrolSpeed;
                 agent.SetDestination(nextPoint.position);
                 continue;
@@ -49,6 +72,7 @@ public class EnemyPatrol : MonoBehaviour
             if (!chasing && distance <= sightDistance && CanSeePlayer())
             {
                 chasing = true;
+                  ShowAlert(true);
                 agent.speed = chaseSpeed;
             }
 

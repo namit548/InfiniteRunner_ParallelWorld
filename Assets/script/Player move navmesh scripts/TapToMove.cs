@@ -7,11 +7,15 @@ using UnityEngine.EventSystems;
 public sealed class TapToMove : MonoBehaviour
 {
     [SerializeField] private Collider ground;
+    [SerializeField] private Color tapMarkerColor = new Color(0.15f, 0.9f, 1f, 1f);
+    [SerializeField, Min(0.01f)] private float tapMarkerRadius = 0.3f;
+    [SerializeField, Min(0.01f)] private float tapMarkerDuration = 0.6f;
 
     private Camera viewCamera;
     private NavMeshAgent agent;
     private NavMeshPath path;
     private NavMeshLocomotionAnimator locomotionAnimator;
+    private TapMarker tapMarker;
 
     private void Awake()
     {
@@ -65,8 +69,35 @@ public sealed class TapToMove : MonoBehaviour
             path.status == NavMeshPathStatus.PathComplete &&
             agent.SetPath(path))
         {
+            ShowTapMarker(target.position, groundHit.normal);
+
             if (locomotionAnimator != null)
                 locomotionAnimator.OnPathAccepted();
         }
+    }
+
+    private void ShowTapMarker(Vector3 position, Vector3 normal)
+    {
+        if (tapMarker == null)
+        {
+            var markerObject = new GameObject("Tap Marker");
+            markerObject.layer = ground.gameObject.layer;
+            UnityEngine.SceneManagement.SceneManager.MoveGameObjectToScene(markerObject, gameObject.scene);
+            tapMarker = markerObject.AddComponent<TapMarker>();
+        }
+
+        tapMarker.Show(position, normal, tapMarkerColor, tapMarkerRadius, tapMarkerDuration);
+    }
+
+    private void OnDisable()
+    {
+        if (tapMarker != null)
+            tapMarker.Hide();
+    }
+
+    private void OnDestroy()
+    {
+        if (tapMarker != null)
+            Destroy(tapMarker.gameObject);
     }
 }

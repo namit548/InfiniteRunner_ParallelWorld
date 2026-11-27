@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/NavMesh Player Move/MainMenu_TapPlayer_Move.unity
+    guid: 6c0b1f37092644a4fb595af73c854638
   - enabled: 0
     path: Assets/Scenes/Infinite Runner/starting Screen.unity
     guid: 9d7757091033b2348bf3f4109b9c8429
