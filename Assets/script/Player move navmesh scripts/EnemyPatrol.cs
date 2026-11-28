@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class EnemyPatrol : MonoBehaviour
 {
     [SerializeField] private GameObject alertIndicator;
+    [SerializeField] private GameObject stunStars;
 
     [SerializeField] private Transform pointA;
     [SerializeField] private Transform pointB;
@@ -17,6 +18,139 @@ public class EnemyPatrol : MonoBehaviour
     [SerializeField] private float sightDistance = 6f;
     [SerializeField] private float giveUpDistance = 10f;
     private Transform viewCamera;
+
+    public bool IsStunned { get; private set; }
+
+    private NavMeshAgent patrolAgent;
+    private Animator[] guardAnimators;
+    private Rigidbody guardBody;
+    private Coroutine stunRoutine;
+    private bool wasAgentStopped;
+    private bool[] wereAnimatorsEnabled;
+    private bool wasBodyKinematic;
+    private bool wasAlertVisible;
+    private bool restoreAgentStop;
+
+    private void Awake()
+    {
+        patrolAgent = GetComponent<NavMeshAgent>();
+        // The visible character can have its own Animator below the guard root.
+        guardAnimators = GetComponentsInChildren<Animator>(true);
+        wereAnimatorsEnabled = new bool[guardAnimators.Length];
+        guardBody = GetComponent<Rigidbody>();
+
+        if (stunStars != null)
+            stunStars.SetActive(false);
+    }
+
+    private void OnEnable()
+    {
+        RestoreAgentStop();
+    }
+
+    private void OnDisable()
+    {
+        if (!IsStunned)
+            return;
+
+        if (stunRoutine != null)
+            StopCoroutine(stunRoutine);
+
+        RecoverFromStun();
+    }
+
+    public void Stun(float duration)
+    {
+        if (!isActiveAndEnabled)
+            return;
+
+        if (!IsStunned)
+        {
+            IsStunned = true;
+            wasAgentStopped = patrolAgent.isActiveAndEnabled &&
+                              patrolAgent.isOnNavMesh && patrolAgent.isStopped;
+            if (patrolAgent.isActiveAndEnabled && patrolAgent.isOnNavMesh)
+            {
+                patrolAgent.isStopped = true;
+                patrolAgent.velocity = Vector3.zero;
+            }
+
+            if (guardBody != null)
+            {
+                wasBodyKinematic = guardBody.isKinematic;
+                if (!guardBody.isKinematic)
+                {
+                    guardBody.linearVelocity = Vector3.zero;
+                    guardBody.angularVelocity = Vector3.zero;
+                    guardBody.isKinematic = true;
+                }
+            }
+
+            for (int i = 0; i < guardAnimators.Length; i++)
+            {
+                if (guardAnimators[i] == null)
+                    continue;
+
+                wereAnimatorsEnabled[i] = guardAnimators[i].enabled;
+                guardAnimators[i].enabled = false;
+            }
+
+            wasAlertVisible = alertIndicator != null && alertIndicator.activeSelf;
+            ShowAlert(false);
+        }
+
+        if (stunStars != null)
+        {
+            stunStars.SetActive(true);
+            foreach (ParticleSystem stars in stunStars.GetComponentsInChildren<ParticleSystem>())
+                stars.Play(true);
+        }
+
+        // Another bomb refreshes the stun instead of restoring a guard too early.
+        if (stunRoutine != null)
+            StopCoroutine(stunRoutine);
+        stunRoutine = StartCoroutine(RecoverAfter(Mathf.Max(0.1f, duration)));
+    }
+
+    private IEnumerator RecoverAfter(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        RecoverFromStun();
+    }
+
+    private void RecoverFromStun()
+    {
+        IsStunned = false;
+        stunRoutine = null;
+        restoreAgentStop = true;
+        RestoreAgentStop();
+
+        if (guardBody != null)
+            guardBody.isKinematic = wasBodyKinematic;
+        for (int i = 0; i < guardAnimators.Length; i++)
+        {
+            if (guardAnimators[i] != null)
+                guardAnimators[i].enabled = wereAnimatorsEnabled[i];
+        }
+        if (stunStars != null)
+        {
+            foreach (ParticleSystem stars in stunStars.GetComponentsInChildren<ParticleSystem>())
+                stars.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+            stunStars.SetActive(false);
+        }
+
+        ShowAlert(wasAlertVisible);
+    }
+
+    private void RestoreAgentStop()
+    {
+        if (restoreAgentStop && patrolAgent != null &&
+            patrolAgent.isActiveAndEnabled && patrolAgent.isOnNavMesh)
+        {
+            patrolAgent.isStopped = wasAgentStopped;
+            restoreAgentStop = false;
+        }
+    }
     
 //     private void Awake()
 // {
@@ -52,11 +186,17 @@ private void ShowAlert(bool visible)
         bool chasing = false;
 
         agent.speed = patrolSpeed;
+        RestoreAgentStop();
         agent.SetDestination(nextPoint.position);
 
         while (agent.isOnNavMesh)
         {
             yield return checkInterval;
+
+            if (IsStunned)
+                continue;
+
+            RestoreAgentStop();
 
             float distance = Vector3.Distance(transform.position, player.position);
 

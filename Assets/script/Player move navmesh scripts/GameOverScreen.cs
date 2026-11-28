@@ -26,7 +26,11 @@ public sealed class GameOverScreen : MonoBehaviour
 
     private void CheckHazard(Collider other)
     {
-        if (other.CompareTag("Obstacle") || other.GetComponentInParent<EnemyPatrol>() != null)
+        EnemyPatrol guard = other.GetComponentInParent<EnemyPatrol>();
+        if (guard != null && guard.IsStunned)
+            return;
+
+        if (other.CompareTag("Obstacle") || guard != null)
             ShowGameOver();
     }
 

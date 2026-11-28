@@ -1444,21 +1444,21 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 119190866}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023796704}
-        m_TargetAssemblyTypeName: TapMainMenu, Assembly-CSharp
-        m_MethodName: LoadLevel
-        m_Mode: 3
+      - m_Target: {fileID: 1023796709}
+        m_TargetAssemblyTypeName: SceneChnaging, Assembly-CSharp
+        m_MethodName: SwitchScenes
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: level 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &341150857
@@ -4573,6 +4573,7 @@ GameObject:
   - component: {fileID: 1023796706}
   - component: {fileID: 1023796705}
   - component: {fileID: 1023796704}
+  - component: {fileID: 1023796709}
   m_Layer: 5
   m_Name: TapMainMenuCanvas
   m_TagString: Untagged
@@ -4625,8 +4626,8 @@ MonoBehaviour:
   - 
   - 
   levelButtons:
-  - {fileID: 1411048140}
-  - {fileID: 341150856}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 1086745989}
   - {fileID: 1022926533}
   - {fileID: 1428354135}
@@ -4829,6 +4830,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1023796709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023796702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f291b912d9f0c40a1b128d420908a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneChnaging
 --- !u!1 &1024467043
 GameObject:
   m_ObjectHideFlags: 0
@@ -6674,16 +6687,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023796704}
-        m_TargetAssemblyTypeName: TapMainMenu, Assembly-CSharp
-        m_MethodName: LoadLevel
-        m_Mode: 3
+      - m_Target: {fileID: 1023796709}
+        m_TargetAssemblyTypeName: SceneChnaging, Assembly-CSharp
+        m_MethodName: SwitchScenes
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: level 1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1411048141

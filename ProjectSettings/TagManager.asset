@@ -15,6 +15,7 @@ TagManager:
   - FxTemporaire
   - duckPlace
   - SafeZone
+  - Bomb
   layers:
   - Default
   - TransparentFX
