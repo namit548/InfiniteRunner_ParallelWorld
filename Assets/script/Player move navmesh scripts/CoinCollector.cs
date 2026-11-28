@@ -17,6 +17,7 @@ public sealed class CoinCollector : MonoBehaviour
     [SerializeField] private TMP_Text collectedText;
     [SerializeField] private TMP_Text bagText;
     [SerializeField] private GameObject[] housePieces = new GameObject[0];
+    [SerializeField] private GameObject Bagfull;
 
     private int carriedCount;
     private int depositedCount;
@@ -27,6 +28,7 @@ public sealed class CoinCollector : MonoBehaviour
     {
         if (coins == null || collectedText == null || bagText == null)
         {
+            
             Debug.LogError("Assign the coins container, collected text and bag text on CoinCollector.", this);
             enabled = false;
             return;
@@ -57,8 +59,19 @@ public sealed class CoinCollector : MonoBehaviour
             return;
         }
 
-        if (carriedCount >= BagCapacity || other.transform.parent != coins || !other.gameObject.activeSelf)
+        if (other.transform.parent != coins || !other.gameObject.activeSelf)
             return;
+
+        if (carriedCount >= BagCapacity)
+        {
+            if (Bagfull != null)
+            {
+                Bagfull.SetActive(true);
+                if (Bagfull.TryGetComponent<Animator>(out var animator))
+                    animator.Play(0, 0, 0f);
+            }
+            return;
+        }
 
         // Stop additional trigger callbacks from counting this coin again.
         other.gameObject.SetActive(false);
